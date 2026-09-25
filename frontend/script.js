@@ -4,9 +4,7 @@
  */
 
 // Determine API Base URL dynamically
-const API_BASE_URL = (
-  window.location.protocol.startsWith("http") && window.location.port === "8000"
-) ? "" : "http://127.0.0.1:8000";
+const API_BASE_URL = "";
 
 // DOM Elements
 const fetchBtn = document.getElementById("fetch-btn");
@@ -341,3 +339,4 @@ function capitalize(str) {
 window.addEventListener("DOMContentLoaded", () => {
   checkApiHealth();
 });
+
